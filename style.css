@@ -1,122 +1,68 @@
-/* Shtoni këtë stil për butonat */
-.button-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-
-.styled-button {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.styled-button:hover {
-    background-color: #2980b9;
-}
-/* Add this to your existing style.css file or create a new one */
+/* style.css */
 
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #f1f1f1;
-    padding: 10px;
     text-align: center;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    max-height: 150px;
-    display: block;
-    margin: 0 auto 10px;
-}
-
-h1 {
-    margin: 0;
 }
 
 nav {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    overflow: hidden;
 }
 
 nav a {
-    color: #fff;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 .container {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 20px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label, input, textarea {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-}
-
-/* Media query for mobile devices */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 5px;
-    }
-
-    nav {
-        padding: 10px;
-    }
-
-    .container {
-        padding: 10px;
-    }
-}
-/* Shtoni këtë në stilin tuaj CSS ose në dosjen e veçantë CSS */
 .button-container {
     display: flex;
-    flex-direction: column; /* Ndryshon orientimin në vertikale */
-    align-items: center; /* Qendron elementet në qendër horizontale */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin-top: 20px;
 }
 
 .styled-button {
-    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
     padding: 10px 20px;
+    text-align: center;
     text-decoration: none;
-    background-color: #3498db;
-    color: #fff;
+    display: inline-block;
+    font-size: 16px;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px; /* Vendos një zbraztirë poshtë butonit */
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+margin: 20px;	/* Add margin to separate buttons */
 }
 
 .styled-button:hover {
-    background-color: #2980b9;
+    background-color: #45a049;
 }
 
-/* Stili për imazhin */
-.button-container img {
-    max-width: 100%; /* Sigurohuni që imazhi të mos tejkalojë dimensionet e prindit */
-    margin-top: 10px; /* Vendos një zbraztirë lartë butonit */
+img {
+    max-width: 100%;
+    height: 150px;
+    margin-top: 20px;
 }
