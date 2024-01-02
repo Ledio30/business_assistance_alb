@@ -1,3 +1,5 @@
+/* Add this to your existing style.css file or create a new one */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -12,9 +14,9 @@ header {
 img {
     max-width: 100%;
     height: auto;
-    max-height: 150px; /* Adjust the max height as needed */
+    max-height: 150px;
     display: block;
-    margin: 0 auto 10px; /* Center the image and provide some space below */
+    margin: 0 auto 10px;
 }
 
 h1 {
@@ -54,4 +56,19 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 5px;
+    }
+
+    nav {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
 }
