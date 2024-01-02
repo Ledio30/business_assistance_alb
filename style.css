@@ -1,3 +1,23 @@
+/* Shtoni këtë stil për butonat */
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
+}
 /* Add this to your existing style.css file or create a new one */
 
 body {
@@ -71,4 +91,32 @@ footer {
     .container {
         padding: 10px;
     }
+}
+/* Shtoni këtë në stilin tuaj CSS ose në dosjen e veçantë CSS */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Ndryshon orientimin në vertikale */
+    align-items: center; /* Qendron elementet në qendër horizontale */
+    margin-top: 20px;
+}
+
+.styled-button {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Vendos një zbraztirë poshtë butonit */
+}
+
+.styled-button:hover {
+    background-color: #2980b9;
+}
+
+/* Stili për imazhin */
+.button-container img {
+    max-width: 100%; /* Sigurohuni që imazhi të mos tejkalojë dimensionet e prindit */
+    margin-top: 10px; /* Vendos një zbraztirë lartë butonit */
 }
