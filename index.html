@@ -75,38 +75,37 @@
         <p>&copy; 2024 business_assistance_albania. All rights reserved.</p>
     </header>
     <!-- Add this script at the end of the body section -->
-
     <script>
-        function performSearch() {
-            // Get the search query from the input field
-            var searchQuery = document.getElementById('search-bar').value;
+    function performSearch() {
+    // Get the search query from the input field
+    var searchQuery = document.getElementById('search-bar').value;
 
-            // Convert the search query to lowercase for case-insensitive comparison
-            var lowercaseSearchQuery = searchQuery.toLowerCase();
+    // Convert the search query to lowercase for case-insensitive comparison
+    var lowercaseSearchQuery = searchQuery.toLowerCase();
 
-            // Map your available buttons to their corresponding pages
-            var buttonPages = {
-                'automjete': 'faqe1.html',
-                'ndertim': 'faqe2.html',
-                'elektronike': 'faqe3.html',
-                'arredim': 'faqe4.html',
-                'restorante': 'faqe5.html'
-                'hotele': 'faqe6.html'
-                'kurse': 'faqe7.html'
-            'vende pune': 'faqe8.html'
-                // Add more mappings as needed
-            };
+    // Map your available buttons to their corresponding pages
+    var buttonPages = {
+        'automjete': 'faqe1.html',
+        'ndertim': 'faqe2.html',
+        'elektronike': 'faqe3.html',
+        'arredim': 'faqe4.html',
+        'restorante': 'faqe5.html',
+        'hotele': 'faqe6.html',
+        'kurse': 'faqe7.html',
+        'vende pune': 'faqe8.html'
+        // Add more mappings as needed
+    };
 
-            // Check if the search query matches a button
-            if (lowercaseSearchQuery in buttonPages) {
-                // Redirect to the corresponding page
-                window.location.href = buttonPages[lowercaseSearchQuery];
-            } else {
-                // Handle the case when no match is found (e.g., display a message)
-                console.log('No matching page found for:', searchQuery);
-            }
-        }
-    </script>
+    // Check if the search query matches a button
+    if (lowercaseSearchQuery in buttonPages) {
+        // Redirect to the corresponding page
+        window.location.href = buttonPages[lowercaseSearchQuery];
+    } else {
+        // Handle the case when no match is found (e.g., display a message)
+        console.log('No matching page found for:', searchQuery);
+        </script>
+    }
+}
 
     </body>
 
