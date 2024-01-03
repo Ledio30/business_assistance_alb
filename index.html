@@ -1,0 +1,111 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BUSINESS ASSISTANCE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Header -->
+    <header>
+        <img src="https://github.com/Ledio30/business_assistance_alb/blob/main/IMG_2055.jpg?raw=true" alt="Business Assistance Photo">
+        <h1>BUSINESS ASSISTANCE</h1>
+        <!-- Inside the header or desired location -->
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button onclick="performSearch()">Search</button>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="products.html">Products/Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section id="home" class="container">
+        <!-- Content goes here -->
+
+        <!-- Shtoni këtë në seksionin "Home" -->
+        <section id="home" class="container">
+            <h2>Mireseerdhet ne website-n tone!</h2>
+            <p>Ne qofte se jeni nje pronar biznesi qe deshiron te rrise follower-at, te krijoje logo dhe poste me kualitet te larte kjo eshte faqja e duhur per:</p>
+            <ul>
+                <li>Dizenjimin e logo-ve unike qe reflektojne identitetin e markes suaj.🔥</li>
+                <li>Krijimin e posteve terheqes qe lene nje ndikim te qendrueshem tek shikuesit.👀</li>
+                <li>Promovimin e bizneseve permes faqes sone ne Instagram dhe sherbimeve te reklamimit ne website-n tone.📋</li>
+                <li>Rritjen e prezences tuaj ne internet duke fituar followers-a dhe angazhim👥📈</li>
+            </ul>
+
+            <!-- Butonat e stiluar dhe fotoja -->
+            <div class="button-container">
+                <a href="faqe1.html" class="styled-button luxury">AUTOMJETE</a>
+                <img src="https://th.bing.com/th/id/R.ea4d6e172ce5b4ae19ce8821b4a40007?rik=WLq5KeGq%2fa2rfQ&pid=ImgRaw&r=0"
+                    alt="Fotoja">
+                <a href="faqe2.html" class="styled-button luxury">NDERTIM</a>
+                <img src="https://wallpaperboat.com/wp-content/uploads/2020/12/07/63377/construction-08.jpg" alt="Second Image">
+                <a href="faqe3.html" class="styled-button luxury">ELEKTRONIKE</a>
+                <img src="https://www.thewowstyle.com/wp-content/uploads/2019/05/Home-Appliances.png" alt="Third Image">
+                <a href="faqe1.html" class="styled-button luxury">ARREDIM</a>
+                <img src="https://images5.alphacoders.com/647/thumb-1920-647570.jpg"
+                    alt="Fotoja">
+                <img src="https://www.freeiconspng.com/uploads/home-appliances-png-22.jpg" alt="Third Image">
+                <a href="faqe1.html" class="styled-button luxury">RESTORANTE</a>
+                <img src="https://wallpapers.net/stylish-tables-at-a-restaurant-hd-wallpaper/download/3840x2160.jpg"
+                    alt="Fotoja">
+                <a href="faqe2.html" class="styled-button luxury">NDERTIM</a>
+                <img src="https://wallpaperaccess.com/full/4255421.jpg" alt="Second Image">
+                <a href="faqe3.html" class="styled-button luxury">ELEKTRONIKE</a>
+                <img src="https://www.freeiconspng.com/uploads/home-appliances-png-22.jpg" alt="Third Image">
+            </div>
+        </section>
+    </section>
+
+    <!-- Bottom Strip -->
+    <header class="bottom-strip">
+        <p>&copy; 2024 business_assistance_albania. All rights reserved.</p>
+    </header>
+    <!-- Add this script at the end of the body section -->
+
+    <script>
+        function performSearch() {
+            // Get the search query from the input field
+            var searchQuery = document.getElementById('search-bar').value;
+
+            // Convert the search query to lowercase for case-insensitive comparison
+            var lowercaseSearchQuery = searchQuery.toLowerCase();
+
+            // Map your available buttons to their corresponding pages
+            var buttonPages = {
+                'automjete': 'faqe1.html',
+                'ndertim': 'faqe2.html',
+                'elektronike': 'faqe3.html',
+                'arredim': 'faqe4.html',
+                'restorante': 'faqe5.html'  // Add more mappings as needed
+            };
+
+            // Check if the search query matches a button
+            if (lowercaseSearchQuery in buttonPages) {
+                // Redirect to the corresponding page
+                window.location.href = buttonPages[lowercaseSearchQuery];
+            } else {
+                // Handle the case when no match is found (e.g., display a message)
+                console.log('No matching page found for:', searchQuery);
+            }
+        }
+    </script>
+
+    </body>
+
+    </html>
+    /* style.css */
+
+    
