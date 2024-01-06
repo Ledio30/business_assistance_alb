@@ -19,11 +19,11 @@ header img {
 nav {
     background-color: #444;
     overflow: hidden;
-    text-align: center; /* Center the links */
 }
 
 nav a {
-    display: inline-block; /* Display the links inline */
+    float: left;
+    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -60,7 +60,7 @@ nav a:hover {
     font-size: 16px;
     margin: 10px 0;
     padding: 10px;
-    border: 2px solid #333;
+    border: 0px solid #333;
     border-radius: 8px;
 }
 
@@ -81,8 +81,15 @@ footer {
 
 @media only screen and (max-width: 600px) {
     nav a {
+        nav a {
+        float: left;
         display: block;
-        width: 100%;
+        color: white;
         text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
     }
 }
