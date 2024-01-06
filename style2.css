@@ -85,4 +85,11 @@ footer {
         width: 100%;
         text-align: center;
     }
+    .button-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+    }
 }
