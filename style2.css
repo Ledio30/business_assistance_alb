@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light gray background */
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #333; /* Dark background color for header */
+    padding: 20px 0;
+    color: #fff; /* White text color */
+}
+
+nav {
+    background-color: #666; /* Darker gray background for navigation */
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #444; /* Slightly darker gray on hover */
+    color: #fff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.square-frame {
+    background-color: #f0f0f0;
+    border: 10px solid #333;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.square-frame.premium {
+    border-color: gold;
+}
+
+.square-frame.premium strong {
+    color: gold;
+}
+
+.square-frame p {
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0px solid #333;
+    border-radius: 8px;
+}
+
+.square-frame p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ .bottom-strip1 {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 5px 0;
+        position: fixed;
+        bottom: 100;
+        width: 100%;
+}
