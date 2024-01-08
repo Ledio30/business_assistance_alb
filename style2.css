@@ -47,17 +47,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
-.square-frame.premium {
-    background-color: #f0f0f0;
-    border: 10px solid #333;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-}
 
-.square-frame.premium strong {
-    color: gold;
-}
 
 .square-frame p {
     font-size: 16px;
